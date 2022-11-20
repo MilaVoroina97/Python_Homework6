@@ -15,7 +15,7 @@ game_results = {team : [0, 0, 0, 0, 0] for team in teams_name}#всего игр
 for team1, goal1, team2, goal2 in game_input:
     game_results[team1][0] +=1#определяем Всегоигр 
     game_results[team2][0] +=1#определяем Всегоигр 
-    print(game_results)
+    # print(game_results)
     if int(goal1) > int(goal2):
         game_results[team1][1] += 1#кол-во побед
         game_results[team1][4] += 3#прибавляем очки за победы
